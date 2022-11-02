@@ -5,15 +5,15 @@ let handler = async (m, { conn }) => {
 m.reply(`
 ┌─〔 𝐏𝐞𝐦𝐢𝐥𝐢𝐤 𝐛𝐨𝐭 〕
 ├ 𝐉𝐚𝐫𝐨𝐭 𝐨𝐟𝐟𝐜
-├ http://wa.me/6285850539404
-├ 𝐍𝐨𝐦𝐞𝐭 𝐛𝐨𝐭 𝐁𝐲 𝐎𝐬𝐜𝐚𝐫-𝐌𝐝
-├ http://wa.me/6285328754243
+├ http://wa.me/6282146218274
+├ 𝐍𝐨𝐦𝐞𝐫 𝐛𝐨𝐭 𝐊𝐡𝐮𝐫𝐮𝐬𝐡𝐢
+├ http://wa.me/6283813417529
 └────
 ┌─〔 R U N T I M E 〕
 ├ 𝐁𝐨𝐭 𝐀𝐤𝐭𝐢𝐟 𝐒𝐞𝐥𝐚𝐦𝐚
 ├ ${uptime}
 ├𝐉𝐚𝐧𝐠𝐚𝐧 𝐋𝐮𝐩𝐚 𝐒𝐮𝐬𝐜𝐫𝐢𝐛𝐞
-├ https://tinyurl.com/2qsejxnw
+├ RIELLBOTZ OFFC
 └────
     `)
 }
