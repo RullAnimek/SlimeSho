@@ -8,7 +8,7 @@ let handler = async function (m, { text, usedPrefix }) {
   if (!name) throw 'Nama tidak boleh kosong (Alphanumeric)'
   if (!age) throw 'Umur tidak boleh kosong (Angka)'
   age = parseInt(age)
-  if (age > 120) throw 'Umur terlalu tua 😂'
+  if (age > 120) throw 'Umur terlalu tua hahaha'
   if (age < 5) throw 'Bayi bisa ngetik sesuai format bjir ._.'
   user.name = name.trim()
   user.age = age
@@ -16,7 +16,7 @@ let handler = async function (m, { text, usedPrefix }) {
   user.registered = true
   let sn = createHash('md5').update(m.sender).digest('hex')
   m.reply(`
-Daftar berhasil!
+Kamu berhasil daftar!
 
 ╭─「 Info 」
 │ Nama: ${name}
