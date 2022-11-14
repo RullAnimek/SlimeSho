@@ -70,6 +70,6 @@ Contoh penggunaan: ${usedPrefix}mtk medium
 handler.help = ['mtk <mode>']
 handler.tags = ['game']
 handler.command = /^mtk/i
-handler.limit = true
+handler.limit = 3
 
 module.exports = handler
