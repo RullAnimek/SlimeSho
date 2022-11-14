@@ -1,16 +1,16 @@
 let fetch = require('node-fetch')
 let handler = async (m, { conn, args }) => {
-if (!args[0]) throw 'Uhm..url nya mana?'
+if (!args[0]) throw 'Berikan link tiktok'
 m.reply('tunggu')
 let res = await fetch(`https://botcahx.ddns.net/api/dowloader/tikok?url=${args[0]}`)
 if (!res.ok) throw await res.text()
 let json = await res.json()
 if (!json.status) throw json
 let { video, description, username } = json.result
-await conn.sendFile(m.chat, video, 'video.mp4', `
-\n💌 *Deskripsi*: ${description}
-\n\n📛 *Username*: ${username}
-\n\n🏢 *By*: R̸i̸e̸l̸l̸G̸a̸n̸z̸z̸
+await conn.sendFile(m.chat, video, 'slimebot.mp4', `
+\n📜 *Deskripsi*: ${description}
+\n\n👾 *Username*: ${username}
+\n\n📮 *By*: Slime Bit
 `, m, false, { contextInfo: { forwardingScore: 999, isForwarded: true }})
 }
 
