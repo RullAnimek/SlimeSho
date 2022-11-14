@@ -3,8 +3,8 @@
     Jangan di hapus credit nya :)
 */
 let timeout = 60000
-let poin = 10000
-let poin_lose = -5000
+let poin = 300
+let poin_lose = -200
 let handler = async (m, { conn, usedPrefix }) => {
   conn.suit = conn.suit ? conn.suit : {}
   if (Object.values(conn.suit).find(room => room.id.startsWith('suit') && [room.p, room.p2].includes(m.sender))) throw 'Selesaikan suit mu yang sebelumnya'
@@ -18,7 +18,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 
 Silahkan @${m.mentionedJid[0].split`@`[0]} 
 `.trim()
-  let footer = `Ketik "terima/ok/gas" untuk memulai suit\nKetik "tolak/gabisa/nanti" untuk menolak`
+  let footer = `Note: Ketik "terima/ok/gas" untuk memulai suit\nKetik "tolak/gabisa/nanti" untuk menolak`
   conn.suit[id] = {
     chat: await conn.sendButton(m.chat, caption, footer, { 'button[0]': 'Terima tantangan', 'row[0]': 'ok', 'button[1]': 'Tolak', 'row[1]': 'tolak' }, m, { mentions: conn.parseMention(caption) }),
     id: id,
