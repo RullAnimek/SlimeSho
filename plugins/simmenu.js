@@ -172,11 +172,11 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     media,
     tksk,
     ftt,
-    "𝚂𝚎𝚖𝚞𝚊 𝙿𝚎𝚛𝚒𝚗𝚝𝚊𝚑🎀",
+    "Semua Menu Bot",
     ".? all",
-    "𝙾𝚠𝚗𝚎𝚛⛽",
+    "Sho (Pemilik Bot)",
     ".owner",
-    "𝙳𝚘𝚗𝚊𝚜𝚒📮",
+    "Donasi",
     ".donasi",
     m
   );
