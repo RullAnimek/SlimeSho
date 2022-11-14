@@ -3,8 +3,9 @@ Made by Aine
 */
 
 let handler = async (m, { conn }) => {
-	let img = 'https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg'
+	let img = 'https://telegra.ph/file/c70add3af64df4f9828e6.jpg'
     let trut = [
+"Pernah mau bunuh diri?",
 "Pernah ngambil uang ortu apa ga?",
 "Apakah bakat aneh yang kamu punya?", 
 "Siapa orang yang kau sukai secara diam²?", 
@@ -38,6 +39,8 @@ let handler = async (m, { conn }) => {
 "Sebutkan kejadian yang bikin kamu sakit hati yang masih di inget",
 "Pencapaian yang udah didapet apa aja ditahun ini?",
 "Kebiasaan terburuk lo pas di sekolah apa?"
+"Siapa yang kamu anggap paling penting di dunia ini?",
+"Kapan terakhir kali ketemu temen masa kecil?",
 ]  // tambahin kata kata sendiri 
 	conn.sendFile(m.chat, img, 'maker.jpeg', `*Truth*\n\n“${pickRandom(trut)}”`, m, false, { thumbnail: Buffer.alloc(0) })
 }
