@@ -61,9 +61,9 @@ module.exports = {
         if (typeof user !== 'object') global.db.data.users[m.sender] = {}
         if (user) {
           if (!isNumber(user.exp)) user.exp = 0
-          if (! isNumber(user.spin)) user.spin = 10
-          if (! isNumber(user.money)) user.money = 1000
-          if (!isNumber(user.limit)) user.limit = 1000
+          if (! isNumber(user.spin)) user.spin = 1
+          if (! isNumber(user.money)) user.money = 0
+          if (!isNumber(user.limit)) user.limit = 15
           if (!user.acc) user.acc = false
           if (!user.acc) user.end = false
           if (!isNumber(user.lastclaim)) user.lastclaim = 0
@@ -97,7 +97,7 @@ module.exports = {
           if (!isNumber(user.expiredgroup)) user.expiredgroup = -1
           if (!user.id) user.id = ''
           if (!user.group) user.group = false
-          if (!isNumber(user.joinlimit)) user.joinlimit = 100
+          if (!isNumber(user.joinlimit)) user.joinlimit = 15
           if (!('premium' in user) ) user.premium = false
           if (!('autolevelup' in user)) user.autolevelup = true
           if (!('owner' in user)) user.owner = false
@@ -106,9 +106,9 @@ module.exports = {
           if(!('staff' in user)) user.staff = false
         } else global.db.data.users[m.sender] = {
           exp: 0,
-          limit: 1000,
-          money: 1000,
-          spin: 10,
+          limit: 15,
+          money: 0,
+          spin: 1,
           hoki: 1,
           acc: false, 
           end: false, 
@@ -126,7 +126,7 @@ module.exports = {
           afk: -1,
           id: '', 
           group: false,
-          joinlimit: 100,
+          joinlimit: 0,
           afkReason: '',
           warn: 0,
           banned: false,
@@ -621,26 +621,26 @@ global.dfail = (type, m, conn) => {
     admin: 'Perintah ini hanya untuk *Admin* grup!',
     ban: 'Maaf kamu sedang di banned', 
     botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
-    unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*'
+    unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Amu.16*'
   }[type]
   if (msg) return m.reply(msg)
   }
   global.dfails = (jid, buffer, content, footer, button1, row1, button2, row2, quoted) => {
-          conn.send2ButtonLoc(m.chat, fetch(fla + 'Kamu Belum Terima Rules Bot!').buffer(), `Rules Undefined Bot
+          conn.send2ButtonLoc(m.chat, fetch(fla + 'Kamu Belum Terima Rules Bot!').buffer(), `Rules Slime Bot
           1. Dilarang spam
           2. Dilarang untuk menggunakan command 18+ berlebihan (ketahuan = ban) 
           3. Dilarang memasukkan bot Tanpa izin Owner ataupun Police
           4. Bot harus admin jika ingin menggunakan fitur admin! 
           5. enable restrict untuk mengaktifkan fitur admin
           
-          Rules Pengguna Undefined Bot
+          Rules Pengguna
           1. Dilarang spam & telpon bot
           2. Dilarang share nomor bot
           3. Dilarang menggunakan bot untuk hal yang tidak berguna
           4. Dilarang untuk membandingkan Undefined bot dengan yang lain
           5. Lapor bug ke Owner dan Police jika ditemukan
           
-          Rules Admin & Group Undefined Bot
+          Rules Admin & Group
           1. Gunakan end group dengan otak di kepala jangan otak di dengkul
           2. Jangan spam invite dan kick menggunakan fitur bot
           3. Jika ada yang spam, bantu group close (untuk menghindari Overload) 
@@ -648,7 +648,7 @@ global.dfail = (type, m, conn) => {
           
           Owner & Police bot berhak banned permanen / sementara dan leave group jika ada yang melanggar! 
           Hormat kami Staff Undefined Bot
-          `, '©Undefined Bot', 'Terima', '.terima', 'Tidak', '.tidak', m)
+          `, 'Slime Bot', 'Terima', '.terima', 'Tidak', '.tidak', m)
   	
 }
 
