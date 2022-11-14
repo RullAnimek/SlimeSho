@@ -5,7 +5,7 @@ let handler = async(m, { conn, text }) => {
     const alasan = `*「 Request 」* _Request Fitur_ \nNomor : wa.me/${m.sender.split`@`[0]}\nPesan : ${text}`
     for (let jid of global.you.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net'))
     m.reply(alasan, jid)
-    m.reply('✔️Request Fitur telah di dikirimkan ke Owner Bot, request palsu/main2 tidak akan ditanggapi dan di ban!\n\nHormat Kami Staff Jarot ofc') 
+    m.reply('✔️Request Fitur telah di dikirimkan ke Owner Bot, request palsu/main2 tidak akan ditanggapi dan di ban!') 
 }
 handler.help = ['requestfitur'].map(v => v + ' <teks>')
 handler.tags = ['main']
