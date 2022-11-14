@@ -10,8 +10,8 @@ else if ((user.police === true) && (user.premium === true)) rank =  'Police Bot 
 else if ((user.helper === true) && (user.premium === true)) rank =  'Helper Premium'
 else if ((user.helper === true) && (user.owner === true)) rank = 'Helper Berbau Owner'
 else if ((user.helper === true) && (user.premium === false) && (user.owner === false)) rank = 'Helper Gratisan'
-else if ((user.owner === true) && (user.premium === true)) rank = 'Owner Bot & User Premium'
-else if ((user.owner === true) && (user.premium === false)) rank = 'Owner Bot'
+else if ((user.owner === true) && (user.premium === true)) rank = 'Creator Bot & User Premium'
+else if ((user.owner === true) && (user.premium === false)) rank = 'Owner/Creator Bot'
   user.rank = rank
   return true
 }
