@@ -6,16 +6,16 @@ global.owner = ['6285607831412'] // Owner Bot
 global.police = ['6285607831412'] // Police Bot
 global.mods = ['6285607831412']  // Want some help?
 global.prems = ['6285607831412'] // Premium user has unlimited limit
-global.fotonya1 = 'https://telegra.ph/file/0e4fb9bfb49f985ef053e.jpg' //ini kalo mau di ganti silahkan ganti aja
-global.fotonya2 = 'https://telegra.ph/file/0e4fb9bfb49f985ef053e.jpg' //gw lupa nih foto apa aja:v
-global.fotonya3 = 'https://telegra.ph/file/0e4fb9bfb49f985ef053e.jpg' //ini juga ganti
-global.fotonya4 = 'https://telegra.ph/file/0e4fb9bfb49f985ef053e.jpg' //ini juga ganti
-global.fotonya5 = 'https://telegra.ph/file/0e4fb9bfb49f985ef053e.jpg' //ini juga ganti
-global.fotonya6 = 'https://telegra.ph/file/0e4fb9bfb49f985ef053e.jpg' //ini ganti pakai foto sosialmedia mu
-global.fotonya7 = 'https://telegra.ph/file/0e4fb9bfb49f985ef053e.jpg'
-global.instagram = 'https://instagram.com/riellxd_4'
+global.fotonya1 = 'https://telegra.ph/file/ef28237e4c89e336454c8.jpg' //ini kalo mau di ganti silahkan ganti aja
+global.fotonya2 = 'https://telegra.ph/file/ef28237e4c89e336454c8.jpg' //gw lupa nih foto apa aja:v
+global.fotonya3 = 'https://telegra.ph/file/ef28237e4c89e336454c8.jpg' //ini juga ganti
+global.fotonya4 = 'https://telegra.ph/file/ef28237e4c89e336454c8.jpg' //ini juga ganti
+global.fotonya5 = 'https://telegra.ph/file/ef28237e4c89e336454c8.jpg' //ini juga ganti
+global.fotonya6 = 'https://telegra.ph/file/ef28237e4c89e336454c8.jpg' //ini ganti pakai foto sosialmedia mu
+global.fotonya7 = 'https://telegra.ph/file/ef28237e4c89e336454c8.jpg'
+global.instagram = 'https://instagram.com'
 
-global.helper = ['6282146218274']
+global.helper = ['6285607831412']
 global.APIs = { // API Prefix
   // name: 'https://website'
   amel: 'https://melcanz.com',
