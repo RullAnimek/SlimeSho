@@ -3,8 +3,12 @@ Made by Aine
 */
 
 let handler = async (m, { conn }) => {
-	let img = 'https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg'
+	let img = 'https://telegra.ph/file/c70add3af64df4f9828e6.jpg'
 	let dares = [
+"Pakai foto profil megawati selama 1 hari",
+"Keliling rumah 2 kali",
+"Bilang aku jelek pakai vn",
+"Hapus 1 aplikasi (apapun)",
 "Foto kuburan tengah malam berani ga?",
 "Bilang I Love You Ke Seseorang", 
 "Ngomong UwU lewat VN dan kirim ke grup!", 
@@ -19,13 +23,13 @@ let handler = async (m, { conn }) => {
 "Pap ke salah satu anggota grup",
 "SS recent call whatsapp",
 "Kirim voice note bilang can i call u baby?",
-"Pake foto sule sampe 3 hari'",
+"Pake foto rimuru sampe 3 hari'",
 "Ketik pake bahasa daerah 24 jam",
 "Ganti nama menjadi _gue anak lucinta luna_ selama 5 jam",
 "Chat ke kontak wa urutan sesuai %batre kamu, terus bilang ke dia _i lucky to hv you_",
 "Prank chat mantan dan bilang *i love u, pgn balikan*",
 "Record voice baca surah al-kautsar",
-"Ganti nama jadi *BOWO* selama 24 jam",
+"Ganti nama jadi *ALOK* selama 24 jam",
 "Sebutkan tipe pacar mu!",
 "VN *aku mencintaimu*",
 "Kamu harus pap sekarang!",
