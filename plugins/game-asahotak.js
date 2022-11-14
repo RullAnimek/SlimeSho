@@ -1,7 +1,7 @@
 let fetch = require('node-fetch')
 
 let timeout = 180000
-let poin = 500
+let poin = 100
 let tiketcoin = 1
 let handler = async (m, { conn, usedPrefix }) => {
     conn.asahotak = conn.asahotak ? conn.asahotak : {}
@@ -13,9 +13,12 @@ let handler = async (m, { conn, usedPrefix }) => {
 let src = await (await fetch('https://raw.githubusercontent.com/BochilTeam/database/master/games/asahotak.json')).json()
     let json = src[Math.floor(Math.random() * src.length)]
     let caption = `
+🏖️ Game asah otak 🏖️
+
+
 ${json.soal}
 
-Timeout *${(timeout / 1000).toFixed(2)} detik*
+Waktu *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}ao untuk bantuan
 Bonus: ${poin} XP
 Tiketcoin: ${tiketcoin} TiketCoin
@@ -24,7 +27,7 @@ Tiketcoin: ${tiketcoin} TiketCoin
         await conn.reply(m.chat, caption, m),
         json, poin,
         setTimeout(() => {
-            if (conn.asahotak[id]) conn.reply(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, conn.asahotak[id][0])
+            if (conn.asahotak[id]) conn.reply(m.chat, `⏱️Waktu habis!\n\nJawabannya adalah *${json.jawaban}*`, conn.asahotak[id][0])
             delete conn.asahotak[id]
         }, timeout)
     ]
