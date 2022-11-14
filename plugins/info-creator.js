@@ -55,7 +55,7 @@ const sentMsg  = await conn.sendMessage(
         }
     }
 )
-let jarot = 'https://telegra.ph/file/0e4fb9bfb49f985ef053e.jpg'
+let jarot = 'https://telegra.ph/file/b2328ad586427d2e8f7f3.jpg'
 await conn.send3ButtonImg(m.chat, jarot, `${ucapan()}\n\nHallo mypren, @${m.sender.split`@`[0]} 👋\nIni nomor owner botnya, jangan di spam ya\nKalau mau disave syarat nya harus pakai profile Sendiri\nKalau gak ada profile gak bakalan direspon\nJika penting langsung chat Owner\n\n⫹⫺ Date : *${week} ${date}*\n⫹⫺ Time : *${wib}*`, wm, 'Source', '.sc', 'Menu', '.menu', 'Donasi', '.donasi', sentMsg)}
 handler.help = ['owner']
 handler.tags = ['info']
@@ -73,16 +73,16 @@ function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
   res = "⊙─❲ *SELAMAT DINIHARI* ❳"
   if (time >= 4) {
-    res = "⊙─❲ *SELAMAT PAGI* ❳"
+    res = "⊙─❲ *SELAMAT PAGI 🌅* ❳"
   }
   if (time > 10) {
-    res = "⊙─❲ *SELAMAT SIANG* ❳"
+    res = "⊙─❲ *SELAMAT SIANG ⛅* ❳"
   }
   if (time >= 15) {
-    res = "⊙─❲ *SELAMAT SORE* ❳"
+    res = "⊙─❲ *SELAMAT SORE 🌄* ❳"
   }
   if (time >= 18) {
-    res = "⊙─❲ *SELAMAT MALAM* ❳"
+    res = "⊙─❲ *SELAMAT MALAM 🌃* ❳"
   }
   return res
 }
