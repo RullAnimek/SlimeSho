@@ -11,7 +11,9 @@ let handler = async (m, { conn, usedPrefix }) => {
     }
     let src = await (await fetch('https://raw.githubusercontent.com/qisyana/scrape/main/lengkapikalimat.json')).json()
     let json = src[Math.floor(Math.random() * src.length)]
-    let caption = `${json.pertanyaan}
+    let caption = `
+🏖️ Game lenkapi kalimat 🏖️
+${json.pertanyaan}
     
 Timeout *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}leka untuk bantuan
