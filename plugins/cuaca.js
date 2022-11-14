@@ -6,7 +6,7 @@ const axios = require('axios')
 let handler = async (m, { conn, args  , usedPrefix, command })=>{
 
 
-if(!args[0]) throw " please provide place or location name"
+if(!args[0]) throw "⚠️ berikan nama tempat atau lokasi"
 
     try{
 
@@ -24,10 +24,10 @@ if(!args[0]) throw " please provide place or location name"
 
 
         conn.reply(m.chat,`
-        🌸 Place: ${name}\n💮 Country: ${Country}\n🌈 Weather: ${Weather}\n🎋 Temperature: ${Temperature}\n💠 Minimum Temperature: ${Minimum_Temperature}\n📛 Maximum Temperature: ${Maximum_Temperature}\n💦 Humidity: ${Humidity}\n🎐 Wind: ${Wind}
+        🏠 Tempat: ${name}\n🌏 Negara: ${Country}\n🌤️ Cuaca: ${Weather}\n🎋 Temperature: ${Temperature}\n💠 Minimum Temperature: ${Minimum_Temperature}\n📛 Maximum Temperature: ${Maximum_Temperature}\n💦 Humidity: ${Humidity}\n🎐 Wind: ${Wind}
         `.trim(),m)
     }catch(e){
-throw 'location not found' 
+throw '⚠️ Lokasi tidak di temukan' 
 console.log(e)
 
     }
