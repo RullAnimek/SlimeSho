@@ -2,6 +2,8 @@ let handler = async m => m.reply(`
 ┏ ┅ ━━━━━━━━━━━━ ┅ ━
 ┇       *「 ANIME LINK 」*
 ┣ ┅ ━━━━━━━━━━━━ ┅ ━
+┃
+┃
 ┃ ❖ https://kusonime.com
 ┃ ❖ https://anoboy.media
 ┃ ❖ https://oploverzz.net
@@ -43,11 +45,13 @@ let handler = async m => m.reply(`
 ┃ ❖ https://kazefuri.net
 ┃ ❖ https://haruzorasubs.net
 ┃ ❖ https://myanimelist.net
+┃
+┃
 ┗ ┅ ━━━━━━━━━━━ ┅ ━
 `.trim()) // Tambah sendiri kalo mau
 handler.help = ['animelink']
 handler.tags = ['anime']
 handler.command = /^animelink$/i
-handler.register =false
+handler.limit = true
 
 module.exports = handler
