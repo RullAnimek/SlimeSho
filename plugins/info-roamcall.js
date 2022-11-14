@@ -1,8 +1,9 @@
 //made by Jarot offc
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 let text = `
-「 Nih Kak 」
-https://call.whatsapp.com/video/dKpgWAWt8pSe4HdGhj6wBU
+Nih kak :)
+
+https://call.whatsapp.com/video/6x9Wc2hLTPWQBEgyuQp7s4
 
 `.trim()
   m.reply(text)
@@ -10,5 +11,6 @@ https://call.whatsapp.com/video/dKpgWAWt8pSe4HdGhj6wBU
 handler.help = ['roamcall']
 handler.tags = ['info']
 handler.command = /^(roamcall)$/i
+handler.limit = true
 
 module.exports = handler
