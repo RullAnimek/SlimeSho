@@ -26,31 +26,31 @@ let handler = async (m, {conn}) => {
 const vcard = `BEGIN:VCARD
 VERSION:3.0
 N:;;;
-FN: ᯤ 𝗥𝗶𝗲𝗹𝗹 𝙊𝙛𝙘
-item.ORG: ᴅᴇᴠᴇʟᴏᴩᴇʀ ʙᴏᴛ
+FN: Sho👑
+item.ORG: Dev Bot
 item1.TEL;waid=6282146218274:6282146218274@s.whatsapp.net
 item1.X-ABLabel: ᴅᴇᴠᴇʟᴏᴩᴇʀ ʙᴏᴛ
 item2.EMAIL;type=INTERNET: Riellganzz5@gmail.com
 item2.X-ABLabel:📫 Gmail
-item3.ADR:;;📍 Acehnese - Indonesian;;;;
+item3.ADR:;;📍 Wee - Webtoon;;;;
 item3.X-ABADR:ac
 item3.X-ABLabel:📮 Location Owner
-item4.URL:https://youtube.com/channel/Riellbotz Offc
+item4.URL:https://www.youtube.com/@Shoo_C
 item4.X-ABLabel:Youtube
-item5.URL:https://github.com/RiellTod1
+item5.URL:https://github.com
 item5.X-ABLabel:Github
-item6.URL:https://instagram.com/riellxd_4
-item6.X-ABLabel:Instagram Jarot
-item7.URL:http://Instagram.com/whyu_4
-item7.X-ABLabel: Instagram Wahyu animek
-item1.TEL;waid=6282146218274:6282146218274@s.whatsapp.net
+item6.URL:https://instagram.com
+item6.X-ABLabel:Instagram
+item7.URL:http://Instagram.com
+item7.X-ABLabel: Instagram²
+item1.TEL;waid=6285607831412:6285607831412@s.whatsapp.net
 item1.X-ABLabel: Creator Bot
 END:VCARD`
 const sentMsg  = await conn.sendMessage(
     m.chat,
     { 
         contacts: { 
-            displayName: 'OWNER BOT', 
+            displayName: 'Creator', 
             contacts: [{ vcard }]  
         }
     }
